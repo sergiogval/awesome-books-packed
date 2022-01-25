@@ -3,7 +3,17 @@ const form = document.querySelector('.form');
 const [title, author] = form.elements;
 
 const inputBook = {};
-let books = new Array([]);
+let books;
+books = [{
+  title: 'Das Kapital',
+  author: 'Karl Marx'
+}, {
+  title: '1984',
+  author: 'George Orwell'
+}, {
+  title: 'The desing of everydat things',
+  author: 'Don Norman'
+}];
 
 if (localStorage.savedBooks) {
   books = JSON.parse(localStorage.getItem('savedBooks'));
