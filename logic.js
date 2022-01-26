@@ -1,19 +1,59 @@
+import { DateTime } from './node_modules/luxon/src/luxon.js';
+
+
+let today;
+today = DateTime.now();
+document.getElementById('date').innerHTML =
+  today.toLocaleString(
+    {weekday:'short', month:'short', day:'2-digit', hour:'2-digit', minute: '2-digit' });
+
+const list = document.querySelector('.list');
+const addNew = document.querySelector('.addNew');
+const contact = document.querySelector('.contact');
+
+addNew.addEventListener('click', () => {
+  const form = document.getElementById('form');
+  const contactSection = document.getElementById('contactSection');
+  const listSection = document.getElementById('listSection');
+  listSection.classList.add('hidden');
+  contactSection.classList.add('hidden');
+  form.classList.remove('hidden');
+});
+
+contact.addEventListener('click', () => {
+  const form = document.getElementById('form');
+  const contactSection = document.getElementById('contactSection');
+  const listSection = document.getElementById('listSection');
+  listSection.classList.add('hidden');
+  form.classList.add('hidden');
+  contactSection.classList.remove('hidden');
+});
+
+list.addEventListener('click', () => {
+  const form = document.getElementById('form');
+  const contactSection = document.getElementById('contactSection');
+  const listSection = document.getElementById('listSection');
+  form.classList.add('hidden');
+  contactSection.classList.add('hidden');
+  listSection.classList.remove('hidden');
+});
+
+
 const allBooks = document.querySelector('.all-books');
 const form = document.querySelector('.form');
 const [title, author] = form.elements;
 
+
+
+const InitBooks = [
+  {title: 'Das Kapital', author: 'Karl Marx'},
+  {title: '1984', author:'George Orwell'},
+  {title: 'The desing of everydat things', author:'Don Norman'}
+];
+localStorage.setItem('InitBooks', JSON.stringify(InitBooks))
+
 const inputBook = {};
-let books;
-books = [{
-  title: 'Das Kapital',
-  author: 'Karl Marx'
-}, {
-  title: '1984',
-  author: 'George Orwell'
-}, {
-  title: 'The desing of everydat things',
-  author: 'Don Norman'
-}];
+let books = [];
 
 if (localStorage.savedBooks) {
   books = JSON.parse(localStorage.getItem('savedBooks'));
@@ -30,9 +70,6 @@ author.addEventListener('change', () => {
 const populateFields = () => {
   localStorage.setItem('savedBooks', JSON.stringify(books));
 };
-
-const today = new Date();
-document.getElementById('date').innerHTML = today;
 
 class Book {
   constructor(title, author) {

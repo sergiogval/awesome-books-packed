@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "luxon": "^2.3.0"
+  },
+  "name": "awesome-books-packed",
+  "description": "![](https://img.shields.io/badge/Microverse-blueviolet)",
+  "version": "1.0.0",
+  "main": "logic.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sergiogval/awesome-books-packed.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sergiogval/awesome-books-packed/issues"
+  },
+  "homepage": "https://github.com/sergiogval/awesome-books-packed#readme"
+}
