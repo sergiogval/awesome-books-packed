@@ -15,13 +15,15 @@ Additional description about the project and its features.
   - CSS
   - JavaScript
   - GIT
-  - 
+  - BUGS
 - Technologies used:
   - VScode
   - GitHub
+  - node
+  - Windows 10 / Kubuntu 21.10
 ## Live Demo
 
-[Live Demo Link](https://sergiogval.github.io/awesome-books/)
+[Live Demo Link](https://sergiogval.github.io/awesome-books-paacked/)
 
 
 ## Getting Started
@@ -37,13 +39,7 @@ To get a local copy up and running follow these simple example steps.
 - When you double click on your index.html file, it should open in the browser
 
 
-## Authors
-
-👤 **Shay Craig**
-
-- GitHub: [@craigs40](https://github.com/craigs40)
-<!-- - Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle) -->
+## Author
 
 👤 **Sergio Valadez**
 
