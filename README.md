@@ -23,7 +23,7 @@ Additional description about the project and its features.
   - Windows 10 / Kubuntu 21.10
 ## Live Demo
 
-[Live Demo Link](https://sergiogval.github.io/awesome-books-paacked/)
+[Live Demo Link](https://sergiogval.github.io/awesome-books-packed/)
 
 
 ## Getting Started
