@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "luxon": "^2.3.0"
+    "luxon": "^2.5.2"
   },
   "name": "awesome-books-packed",
   "description": "![](https://img.shields.io/badge/Microverse-blueviolet)",
